@@ -3,16 +3,26 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>L'Oréal Beauty Assistant</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
   <div class="chat-container">
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
 
     <header>
 
@@ -29,21 +39,34 @@
     </header>
 
 
-    <!-- Displays the user's latest question -->
-    <div id="latestQuestion"></div>
+    <!-- =========================
+         LATEST USER QUESTION
+    ========================== -->
+
+    <div id="latestQuestion">
+      Ask me a beauty question!
+    </div>
 
 
-    <!-- Chat conversation appears here -->
+    <!-- =========================
+         CHAT CONVERSATION
+    ========================== -->
+
     <div id="chatBox">
 
-      <div class="message bot-message">
+      <!-- Initial chatbot welcome message -->
+      <div class="message bot">
         Hi! I'm your L'Oréal Beauty Assistant. ✨
-        Ask me about skincare, makeup, haircare, fragrances,
-        or personalized beauty routines.
+        Ask me about skincare, makeup, haircare,
+        fragrances, or personalized beauty routines.
       </div>
 
     </div>
 
+
+    <!-- =========================
+         USER INPUT
+    ========================== -->
 
     <div class="input-area">
 
@@ -52,23 +75,35 @@
         type="text"
         placeholder="Ask about skincare, makeup, haircare..."
         autocomplete="off"
+        aria-label="Ask the L'Oréal Beauty Assistant a question"
       >
 
-      <button id="sendBtn" type="button">
+      <button
+        id="sendBtn"
+        type="button"
+      >
         Send
       </button>
 
     </div>
 
 
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
       Made with AI • L'Oréal Beauty Assistant
     </footer>
 
+
   </div>
 
 
+  <!-- JavaScript -->
   <script src="script.js"></script>
 
+
 </body>
+
 </html>
