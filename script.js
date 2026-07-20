@@ -20,7 +20,7 @@ const messages = [
 You are L'Oréal Beauty Assistant.
 
 Only answer questions about:
-
+ 
 - L'Oréal products
 - Skincare
 - Makeup
