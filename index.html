@@ -2,57 +2,73 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>L'Oréal Beauty Assistant</title>
+  <title>L'Oréal Beauty Assistant</title>
 
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="chat-container">
+  <div class="chat-container">
 
-<header>
+    <header>
 
-<img src="images/loreal-logo.png" class="logo">
+      <img
+        src="images/loreal-logo.png"
+        class="logo"
+        alt="L'Oréal Logo"
+      >
 
-<h1>L'Oréal Beauty Assistant</h1>
+      <h1>L'Oréal Beauty Assistant</h1>
 
-<p>Your AI beauty expert</p>
+      <p>Your AI beauty expert</p>
 
-</header>
+    </header>
 
-<div id="latestQuestion"></div>
 
-<div id="chatBox"></div>
+    <!-- Displays the user's latest question -->
+    <div id="latestQuestion"></div>
 
-<div class="input-area">
 
-<input
-id="userInput"
-type="text"
-placeholder="Ask about skincare, makeup, haircare..."
->
+    <!-- Chat conversation appears here -->
+    <div id="chatBox">
 
-<button id="sendBtn">
-Send
-</button>
+      <div class="message bot-message">
+        Hi! I'm your L'Oréal Beauty Assistant. ✨
+        Ask me about skincare, makeup, haircare, fragrances,
+        or personalized beauty routines.
+      </div>
 
-</div>
+    </div>
 
-<footer>
 
-Made with AI • L'Oréal Beauty Assistant
+    <div class="input-area">
 
-</footer>
+      <input
+        id="userInput"
+        type="text"
+        placeholder="Ask about skincare, makeup, haircare..."
+        autocomplete="off"
+      >
 
-</div>
+      <button id="sendBtn" type="button">
+        Send
+      </button>
 
-<script src="script.js"></script>
+    </div>
+
+
+    <footer>
+      Made with AI • L'Oréal Beauty Assistant
+    </footer>
+
+  </div>
+
+
+  <script src="script.js"></script>
 
 </body>
 </html>
-
-
